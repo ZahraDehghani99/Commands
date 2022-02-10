@@ -8,7 +8,7 @@ ssh username@ip_address
 ```
 
 ## Copy file to another ubuntu system Using SCP
-
+SCP or secure copy is a means of securley transferring files between two machines on a network. 
 ```
 scp [path to source file] [user_name@remote_host]:[path to destination file]
 ```

@@ -1,46 +1,33 @@
-# Linux
-Here I gathered some of important commands in linux.
+# Anaconda
+Here I gathered some of important commands in Anaconda.
 
-## Connecting to SSH Over LAN 
-when you want to connect to another ubuntu system from your ubuntu system you should install openssh-server (in this [link](https://linuxize.com/post/how-to-enable-ssh-on-ubuntu-18-04/) you can see this process)then run the following command:
+## Create new environment
+If you want to create conda env with specific version of `python` and `pip`, you should run the following command:
 ```
-ssh username@ip_address
+conda create -n <env_name> python==3.7 pip==20.2.4
 ```
-
-## Copy file to another ubuntu system Using SCP
-SCP or secure copy is a means of securley transferring files between two machines on a network. 
+## Activate an environment
 ```
-scp [path to source file] [user_name@remote_host]:[path to destination file]
+conda activate <env_name>
 ```
-
-## Check status of a program
-
+## Deactivate an environment
 ```
-systemctl status <program_name>
+conda deactivate <env_name>
 ```
-If the status of the program is not activate, run the following command for activating it:
+## Remove an environment
+If you want to remove an environment, you should first deactivate this enviroment then run the following command:
 ```
-systemctl start <program_name>
+conda env remove -n env_name
 ```
-
-## History of terminal
-If you want to see the history of commands you run in terminal you should run this command:
+## List all the packages in an enviroment
 ```
-history
+conda list
 ```
-If you want to see the commads you run with keyboad for example `docker`, you should run this commad:
+## List all the environments
 ```
-history |grep docker
+conda env list
 ```
-
-## Kill the process on specific port
+## Create a copy from an environment
 ```
-sudo kill -9 $(sudo lsof -t -i:<port>)
+conda create -n <new_env_name> --clone <my_env>
 ```
-
-## Setting DNS
-If you can't access to internet, then you should configure your dns as follows:
-```
-sudo nano /etc/resolv.conf
-```
-and then add `nameserver 8.8.8.8` to this file.

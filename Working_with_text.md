@@ -1,5 +1,6 @@
 # Working with text on Terminal
 Here I gathered some of important commands in linux for working with text.
+useful link: https://www.maketecheasier.com/working-with-text-on-linux-command-line/
 
 ## cat
 you can display content of a single file using `cat`.

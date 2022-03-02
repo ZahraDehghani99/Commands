@@ -1,6 +1,11 @@
 # Linux
 Here I gathered some of important commands in linux.
 
+## Version of ubuntu
+```
+lsb_release -a
+```
+
 ## Connecting to SSH Over LAN 
 when you want to connect to another ubuntu system from your ubuntu system you should install openssh-server (in this [link](https://linuxize.com/post/how-to-enable-ssh-on-ubuntu-18-04/) you can see this process)then run the following command:
 ```

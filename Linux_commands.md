@@ -49,3 +49,8 @@ If you can't access to internet, then you should configure your dns as follows:
 sudo nano /etc/resolv.conf
 ```
 and then add `nameserver 8.8.8.8` to this file.
+
+## List Direcotriy with volumes
+```
+ls -sh
+```

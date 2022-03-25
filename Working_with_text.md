@@ -43,3 +43,27 @@ head -n <file_name>
 sed s/pattern/replacement/g filename
 ```
 To modify the original file instead, you can use the `-i` flag.
+
+## Remove first space character 
+To remove first space character in each line in `inputfile`, and store the modified file in `outputfile`, you should run the following command:
+```
+sed 's/ //' inputfile >outputfile
+```
+This applies a substitution to all lines of the file `inputfile` that will substitute the first space character with nothing (i.e. remove it). The output is stored in the file `outputfile`.
+
+## Remove space at the end of each line file
+```
+sed 's/ *$//' inputfile > outputfile
+```
+
+## Calculate the frequency of each word in a text file
+```
+cat word.txt |tr ' ' '\n'| sort | uniq -c | sort -nr
+```
+tr ' ' '\n' : transforms ' ' (space) with '\n', it means this command put each word in a separate line
+more information : https://wingsoftechnology.com/unix-calculate-frequency-each-word-text-file/
+
+If you want to store the resulat in a file you should run the following command:
+```
+cat words.txt | tr -s ‘ ‘ ‘\n’ | sort | uniq -c | sort -r | awk ‘{print $2, $1}’ > result.txt
+```

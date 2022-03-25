@@ -63,7 +63,7 @@ cat word.txt |tr ' ' '\n'| sort | uniq -c | sort -nr
 tr ' ' '\n' : transforms ' ' (space) with '\n', it means this command put each word in a separate line
 more information : https://wingsoftechnology.com/unix-calculate-frequency-each-word-text-file/
 
-If you want to store the resulat in a file you should run the following command:
+If you want to store the result in a file you should run the following command:
 ```
 cat words.txt | tr -s ‘ ‘ ‘\n’ | sort | uniq -c | sort -r | awk ‘{print $2, $1}’ > result.txt
 ```

@@ -67,3 +67,13 @@ If you want to store the result in a file you should run the following command:
 ```
 cat words.txt | tr -s ‘ ‘ ‘\n’ | sort | uniq -c | sort -r | awk ‘{print $2, $1}’ > result.txt
 ```
+## Convert Large CSV file to TXT file in terminal
+
+use this: (if you don't have dos2unix, you should install it `using sudo apt install dos2unix`)
+```
+dos2unix source.csv
+```
+then:
+```
+cat source.csv > destination.txt
+```

@@ -54,3 +54,8 @@ and then add `nameserver 8.8.8.8` to this file.
 ```
 ls -sh
 ```
+## Determine size of files and directories
+du (abbreviated from disk usage
+```
+du -h [file or foler name]
+```

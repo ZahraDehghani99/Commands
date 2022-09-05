@@ -7,7 +7,7 @@ For this goal, we should enable regex search in find box using `.*` button.Then 
 ```
 ^.*(word1|word2).*\n?
 ```
-above command find your desired lines, to delete them you should first press `ctrl` + `enter` to select those lines and then delete them using 'del'.
+above command find your desired lines, to delete them you should first press `alt` + `enter` to select those lines and then delete them using 'del'.
 
 
 ## Find everything between ""

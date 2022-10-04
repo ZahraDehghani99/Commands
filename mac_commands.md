@@ -13,3 +13,5 @@ ifconfig
 
 ## `ctrl+D` equivalent in mac
 `command + L`
+
+`command` key is like `ctrl` key in windows command like copy, paste and cut.

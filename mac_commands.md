@@ -10,3 +10,6 @@ or type below command and see the ip in the `en0` section
 ```
 ifconfig
 ```
+
+## `ctrl+D` equivalent in mac
+`command + L`

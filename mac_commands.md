@@ -1,5 +1,5 @@
 # Mac
-Here I gathered some important commands in mac.
+Here I gathered some of important commands in mac.
 
 ## View ip address
 ```

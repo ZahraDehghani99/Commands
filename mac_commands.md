@@ -1,3 +1,6 @@
+# Mac
+Here I gathered some important commands in mac.
+
 ## View ip address
 ```
 ipconfig getifaddr en0

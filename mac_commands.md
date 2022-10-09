@@ -19,3 +19,6 @@ ifconfig
 ## Screenshot 
 
 press `command+shift+3` for capture whole of the screen and press `command+shift+5` for capture porsion of the screen.
+
+## Half Space in Mac
+presss `shift+space`

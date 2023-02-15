@@ -25,5 +25,10 @@ press `command+shift+3` for capture whole of the screen and press `command+shift
 ## Half Space in Mac
 presss `shift+space`
 
+
 ## Cut in mac
 Select your desired file or folder and press `command+c` then in target path press `command+option+v`
+
+
+## Show hidden files in mac
+press `command+shift+.`

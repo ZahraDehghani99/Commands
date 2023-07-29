@@ -32,3 +32,17 @@ Select your desired file or folder and press `command+c` then in target path pre
 
 ## Show hidden files in mac
 press `command+shift+.`
+
+
+## Disable Gatekeeper
+you can temporarily disable Gatekeeper, which is Apple's security feature that prevents the installation of apps from unidentified developers. Open Terminal and enter the following command:
+```
+sudo spctl --master-disable
+```
+
+## Enable Gatekeeper
+After installing your desired program, it is advisible that enable gatekeeeper with following command:
+```
+sudo spctl --master-enable
+
+```

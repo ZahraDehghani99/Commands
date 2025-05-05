@@ -1,22 +1,33 @@
 # Linux
 Here I gathered some of important commands in linux.
 
+# General Commands
+## Remove a file
+```
+rm file
+```
+
+## Remove a directory
+```
+rm -r folder
+```
+
+## Change directory
+```
+cd folder
+```
+
+## Go back to previous folder in directory
+```
+cd ..
+```
+
+
 ## Version of ubuntu
 ```
 lsb_release -a
 ```
 
-## Connecting to SSH Over LAN 
-when you want to connect to another ubuntu system from your ubuntu system you should install openssh-server (in this [link](https://linuxize.com/post/how-to-enable-ssh-on-ubuntu-18-04/) you can see this process)then run the following command:
-```
-ssh username@ip_address
-```
-
-## Copy file to another ubuntu system Using SCP
-SCP or secure copy is a means of securley transferring files between two machines on a network. 
-```
-scp [path to source file] [user_name@remote_host]:[path to destination file]
-```
 
 ## Check status of a program
 
@@ -59,3 +70,26 @@ du (abbreviated from disk usage
 ```
 du -h [file or foler name]
 ```
+
+# Server Related Commands
+## Connecting to SSH Over LAN 
+when you want to connect to another ubuntu system from your ubuntu system you should install openssh-server (in this [link](https://linuxize.com/post/how-to-enable-ssh-on-ubuntu-18-04/) you can see this process)then run the following command:
+```
+ssh username@ip_address
+```
+
+## Copy file to another ubuntu system Using SCP
+SCP or secure copy is a means of securley transferring files between two machines on a network. 
+```
+scp [path to source file] [user_name@remote_host]:[path to destination file]
+```
+
+## Copy file from server to local system
+First go the desired directory you want your file or folder transfer to it, then type this command:
+This code transfer a folder to my local system:
+```
+ssh root@172.25.5.17 'cd /root  && tar -czf - [folder you want to transfer]' > server_crawler.tar.gz
+
+```
+
+

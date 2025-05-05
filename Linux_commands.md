@@ -92,4 +92,7 @@ ssh root@172.25.5.17 'cd /root  && tar -czf - [folder you want to transfer]' > s
 
 ```
 
-
+and then this command to extract it:
+```
+tar -xzf server_crawler.tar.gz
+```

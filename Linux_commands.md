@@ -96,3 +96,37 @@ and then this command to extract it:
 ```
 tar -xzf server_crawler.tar.gz
 ```
+
+## Run the Code with `nohup`
+nohup : not hang up
+
+
+```
+nohup python script.py > output.log 2>&1 &
+```
+
+nohup: Prevents the process from terminating when the SSH session ends.
+    
+output.log: Redirects stdout (standard output) to output.log.
+
+2>&1: Redirects stderr (errors) to the same log file.
+
+&: Runs the command in the background.
+
+## Check Running Background Jobs
+```
+jobs -l
+```
+
+## View Logs
+```
+tail -f output.log  # Real-time log monitoring
+cat output.log     # View entire log
+```
+
+
+## Graceful Termination
+```
+kill PID  # Replace PID with the actual number (e.g., `kill 12345`)
+```
+

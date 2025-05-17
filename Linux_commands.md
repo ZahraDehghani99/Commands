@@ -70,6 +70,10 @@ du (abbreviated from disk usage
 ```
 du -h [file or foler name]
 ```
+or
+```
+du -sh [file or foler name]
+```
 
 # Server Related Commands
 ## Connecting to SSH Over LAN 

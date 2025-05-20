@@ -1,2 +1,2 @@
 # Commands
-Here I gathered some of important commands.
+Here I gathered some of the important commands.

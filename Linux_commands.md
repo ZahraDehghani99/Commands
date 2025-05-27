@@ -144,3 +144,34 @@ cat output.log     # View entire log
 kill PID  # Replace PID with the actual number (e.g., `kill 12345`)
 ```
 
+## DNS related settings
+In some situations that you want to  have access to some pages but you do not you should change the content of one of these files `/etc/resolv.conf` or `/etc/systemd/resolved.conf`. I think, based on your system it may vary that which one you should change.
+For example, on my server, I wanted to push my codes to gitlab, but I had not ping on gitlab:
+When I enter this command:
+```
+ping gitlab.[].net
+```
+I get that 
+```
+ping: gitlab.apk-group.net: Name or service not known
+```
+So, after searching the problem I realized that I should add the dns of the company to one of those files. But after adding `nameserver 172.[company ip]` to the `/etc/resolv.conf`, I realized that still I do not have ping. So, I added 
+```
+[Resolve]
+DNS=172.25.5.1
+```
+to the `/etc/systemd/resolved.conf` and then restart the service using `sudo systemctl restart systemd-resolved`. That fixed the  problem.
+
+
+## Watch the content of the file
+```
+cat file_address
+```
+## Change the content of the file
+```
+sudo nano file_address
+```
+Then press `Ctrl + O`, `Enter` for saving changes, and `Ctrl+X` for exit.
+
+
+

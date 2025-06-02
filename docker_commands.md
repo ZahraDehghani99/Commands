@@ -33,3 +33,12 @@ docker run - p 6333:6333 -p 6334:6334 qdrant/qdrabt
 ```
 docker stop <container_id>
 ```
+
+# Start a container
+```
+docker start <container_name>
+```
+# Watching the logs of the container which is running in background
+```
+docker logs -f <container_name>
+```

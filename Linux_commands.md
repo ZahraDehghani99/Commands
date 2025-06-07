@@ -144,6 +144,11 @@ cat output.log     # View entire log
 kill PID  # Replace PID with the actual number (e.g., `kill 12345`)
 ```
 
+## Finds any processes that have `run.py` in their command line
+```
+ps aux | grep run.py
+```
+
 ## DNS related settings
 In some situations that you want to  have access to some pages but you do not you should change the content of one of these files `/etc/resolv.conf` or `/etc/systemd/resolved.conf`. I think, based on your system it may vary that which one you should change.
 For example, on my server, I wanted to push my codes to gitlab, but I had not ping on gitlab:

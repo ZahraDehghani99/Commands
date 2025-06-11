@@ -52,6 +52,7 @@ history |grep docker
 ## Kill the process on specific port
 ```
 sudo kill -9 $(sudo lsof -t -i:<port>)
+kill -9 $(lsof -t -i :8000)
 ```
 
 ## Setting DNS

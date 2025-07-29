@@ -86,6 +86,13 @@ lscpu
 free -h
 ```
 
+## Priting Directory Strucutre of the project
+Useful when you want to write readme or explaning the structure of your project to AI.
+```
+sudo apt install tree
+tree -L 3 > structure.txt
+```
+
 # Server Related Commands
 ## Connecting to SSH Over LAN 
 when you want to connect to another ubuntu system from your ubuntu system you should install openssh-server (in this [link](https://linuxize.com/post/how-to-enable-ssh-on-ubuntu-18-04/) you can see this process)then run the following command:

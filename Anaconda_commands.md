@@ -31,3 +31,26 @@ conda env list
 ```
 conda create -n <new_env_name> --clone <my_env>
 ```
+
+## Transfer an environment to another server
+When the internet connection in one server is poor, we can follow this instruction to pack and transfer env to another server.
+
+### On Source Server
+```
+conda install -c conda-forge conda-pack # Install conda-pack if not available
+conda pack -n your_env_name -o your_env_name.tar.gz # Pack your environment
+scp your_env_name.tar.gz username@destination_ip:/path/to/ # Copy the archive to the destination server
+```
+
+### On the target server (with poor internet)
+unpack the environment:
+```
+mkdir -p ~/your_env_name
+tar -xzf your_env_name.tar.gz -C ~/your_env_name
+
+```
+Activate the environment:
+
+```
+source ~/your_env_name/bin/activate
+```

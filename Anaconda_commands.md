@@ -54,3 +54,8 @@ Activate the environment:
 ```
 source ~/your_env_name/bin/activate
 ```
+The following command is really really important and will fix any path issues. If you forget to execute this command you virtual env wound't work as expected. This rebases some hardcoded paths in the binaries.
+```
+conda-unpack
+
+```

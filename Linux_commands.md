@@ -28,6 +28,36 @@ cd ..
 lsb_release -a
 ```
 
+## Listing all files including hidden ones
+```
+ls -a
+```
+
+## Watching the permission of each file or directory
+for file
+```
+ls -l 
+```
+
+for directory
+```
+ls -ld
+```
+
+```bash
+ls -ld /home/ai/dehghani/projects
+```
+
+* `ls -ld` → shows details about the directory itself, not its contents.
+* Example output:
+
+  ```
+  drwxr-xr-x 5 ai ai 4096 Aug 30 12:00 /home/ai/dehghani/projects
+  ```
+
+  * The **3rd column** = user owner (`ai`)
+  * The **4th column** = group owner (`ai`)
+
 
 ## Check status of a program
 
